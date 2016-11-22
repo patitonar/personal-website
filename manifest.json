@@ -1,0 +1,13 @@
+{
+  "short_name": "personal-website",
+  "name": "Gerardo Nardelli",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "68x68",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "./",
+  "display": "standalone"
+}

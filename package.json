@@ -5,7 +5,8 @@
   "devDependencies": {
     "enzyme": "^2.4.1",
     "react-addons-test-utils": "^15.3.1",
-    "react-scripts": "0.6.1"
+    "react-scripts": "0.6.1",
+    "sw-precache": "^4.2.2"
   },
   "dependencies": {
     "aphrodite": "^0.5.0",
@@ -15,7 +16,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && cp manifest.json build/ && sw-precache --config=sw-precache-config.js --verbose",
     "eject": "react-scripts eject",
     "test": "react-scripts test --env=jsdom"
   },
