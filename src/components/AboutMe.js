@@ -68,7 +68,7 @@ const AboutMe = () => (
         </p>
         <p>
           I have experience in web development. I'm currently learning and gaining experience with React and its ecosystem.
-          I develop great web applications writing elegant ES6 code, making focus on good UI/UX, performance, maintainability
+          I develop great web applications writing elegant code, making focus on good UI/UX, performance, maintainability
           and working with tools that help me being productive.
         </p>
       </div>
