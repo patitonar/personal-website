@@ -1,8 +1,9 @@
 module.exports = {
   staticFileGlobs: [
     'build/static/**/!(*map*)',
+    'build/manifest.json',
     'build/index.html'
   ],
   stripPrefix: 'build/',
-  runtimeCaching: []
+  swFilePath: 'build/service-worker.js'
 };
