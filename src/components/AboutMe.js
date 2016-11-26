@@ -1,6 +1,9 @@
 import React from 'react';
 import { StyleSheet, css } from 'aphrodite';
 import Paper from 'material-ui/Paper';
+import image from '../assets/image.jpg';
+
+const imageUrl = `url('${image}')`;
 
 const styles = StyleSheet.create({
   container: {
@@ -43,7 +46,7 @@ const styles = StyleSheet.create({
     },
     flex: '1 0 auto',
     textAlign: 'center',
-    backgroundImage: "url('image.jpg')",
+    backgroundImage: imageUrl,
     backgroundPosition: 'center',
   },
   avatarWrapper: {
