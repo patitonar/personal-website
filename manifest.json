@@ -1,10 +1,25 @@
 {
-  "short_name": "personal-website",
+  "short_name": "GNardelli",
   "name": "Gerardo Nardelli",
   "icons": [
     {
       "src": "favicon.ico",
       "sizes": "68x68",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/favicon_128.ico",
+      "sizes": "128x1288",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/favicon_256.ico",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/favicon_128.ico",
+      "sizes": "512x512",
       "type": "image/png"
     }
   ],
