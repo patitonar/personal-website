@@ -2,22 +2,22 @@ import React, { PropTypes } from 'react';
 import { StyleSheet, css } from 'aphrodite';
 
 const styles = StyleSheet.create({
-  fa: {
-    fontSize: '2em',
-    margin: '15px',
-    color: 'black'
-  }
+    svg: {
+        margin: '13px',
+    }
 });
 
-const SocialIcon = ({ link, iconClass }) => (
+const SocialIcon = ({ link, icon }) => (
   <a href={link}>
-    <i className={`fa ${iconClass} ${css(styles.fa)}`}></i>
+    <svg className={css(styles.svg)} width="50" height="50" viewBox="0 0 512 512">
+      <path d={icon} />
+    </svg>
   </a>
 );
 
 SocialIcon.propTypes = {
   link: PropTypes.string.isRequired,
-  iconClass: PropTypes.string.isRequired,
+  icon: PropTypes.string.isRequired,
 };
 
 export default SocialIcon;

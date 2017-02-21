@@ -1,6 +1,7 @@
 import React from 'react';
 import { StyleSheet, css } from 'aphrodite';
 import SocialIcon from './SocialIcon';
+import {icons} from '../constants';
 
 const styles = StyleSheet.create({
   container: {
@@ -45,19 +46,19 @@ const Presentation = () => (
       <div>
         <SocialIcon
           link='https://github.com/patitonar'
-          iconClass='fa-github'
+          icon={icons.github}
         />
         <SocialIcon
           link='https://twitter.com/patitonar'
-          iconClass='fa-twitter'
+          icon={icons.twitter}
         />
         <SocialIcon
           link='https://www.linkedin.com/in/gerardonardelli'
-          iconClass='fa-linkedin-square'
+          icon={icons.linkedin}
         />
         <SocialIcon
           link='mailto:patitonardelli@gmail.com'
-          iconClass='fa-envelope'
+          icon={icons.envelope}
         />
       </div>
     </div>
