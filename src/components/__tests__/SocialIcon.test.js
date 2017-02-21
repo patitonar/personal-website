@@ -2,6 +2,7 @@ import React from 'react';
 import { shallow, mount, render } from 'enzyme';
 import SocialIcon from '../SocialIcon';
 import { StyleSheetTestUtils } from 'aphrodite';
+import {icons} from '../../constants';
 
 describe('Test suite for Presentation', () => {
   beforeEach(() => {
@@ -16,6 +17,6 @@ describe('Test suite for Presentation', () => {
     expect(shallow(
       <SocialIcon
         link={gitLink}
-        iconClass='fa-github' />).type()).toBe('a');
+        icon={icons.github} />).type()).toBe('a');
   });
 });
