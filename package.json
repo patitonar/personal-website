@@ -3,25 +3,20 @@
   "version": "0.0.1",
   "private": true,
   "devDependencies": {
-    "enzyme": "^2.4.1",
-    "react-addons-test-utils": "^15.3.1",
-    "react-scripts": "1.0.7",
+    "react-test-renderer": "15.6.1",
     "sw-precache": "^4.2.2"
   },
   "dependencies": {
     "glamor": "^2.20.25",
     "glamorous": "^3.23.4",
-    "material-ui": "^0.15.4",
     "react": "^15.3.1",
-    "react-dom": "^15.3.1"
+    "react-dom": "^15.3.1",
+    "react-scripts": "1.0.10"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build && cp manifest.json build/ && sw-precache --config=sw-precache-config.js --verbose",
     "eject": "react-scripts eject",
     "test": "react-scripts test --env=jsdom"
-  },
-  "eslintConfig": {
-    "extends": "./node_modules/react-scripts/config/eslint.js"
   }
 }
