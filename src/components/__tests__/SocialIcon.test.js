@@ -1,22 +1,14 @@
 import React from 'react';
-import { shallow, mount, render } from 'enzyme';
 import SocialIcon from '../SocialIcon';
-import { StyleSheetTestUtils } from 'aphrodite';
-import {icons} from '../../constants';
+import renderer from 'react-test-renderer';
+import {socialIcons} from '../../constants';
 
-describe('Test suite for Presentation', () => {
-  beforeEach(() => {
-      StyleSheetTestUtils.suppressStyleInjection();
-  });
-  afterEach(() => {
-      StyleSheetTestUtils.clearBufferAndResumeStyleInjection();
-  });
-
-  const gitLink = 'https://github.com/patitonar';
-  it('SocialIcon renders correctly', () => {
-    expect(shallow(
-      <SocialIcon
-        link={gitLink}
-        icon={icons.github} />).type()).toBe('a');
-  });
+it('SocialIcon renders correctly', () => {
+  const el = socialIcons[0];
+  const tree = renderer.create(
+    <SocialIcon
+      link={el.link}
+      icon={el.icon} />
+  ).toJSON();
+  expect(tree).toMatchSnapshot();
 });

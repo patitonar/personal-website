@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AboutMe renders correctly 1`] = `
+<div
+  className="css-16zp9vm"
+>
+  <h1
+    className="css-15q2ai2"
+  >
+    About Me
+  </h1>
+  <div
+    className="css-iahclo"
+  >
+    <div
+      className="css-5n2qub"
+    >
+      <div
+        className="css-1xiydre"
+      />
+    </div>
+    <div>
+      <p>
+        I'm a Software Engineer from Argentina, also a frustrated gamer and a football fan. I love researching cutting edge technologies and playing around with them.
+      </p>
+      <p>
+        I have experience working as a full stack developer, although frontend development is what I really like. Some of the technologies I worked with are PHP, Java and nodejs in the backend. On the frontend I built some apps using backbone, angular and react. Also, Ionic for mobile development and React-VR just for VR fun.
+      </p>
+      <p>
+        I'm really good at learning new techs and I always try to build great applications writing elegant code, making focus on good UI/UX, performance, maintainability and working with tools that help me be productive. Also I like contributing to open source projects whenever I have the opportunity.
+      </p>
+    </div>
+  </div>
+</div>
+`;
