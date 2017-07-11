@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "devDependencies": {
+    "cp-cli": "1.0.2",
     "react-test-renderer": "15.6.1",
     "sw-precache": "^4.2.2"
   },
@@ -15,7 +16,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build && cp manifest.json build/ && sw-precache --config=sw-precache-config.js --verbose",
+    "build": "react-scripts build && cp-cli manifest.json build/manifest.json && sw-precache --config=sw-precache-config.js --verbose",
     "eject": "react-scripts eject",
     "test": "react-scripts test --env=jsdom"
   }
