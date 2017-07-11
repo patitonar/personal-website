@@ -12,9 +12,12 @@
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
     <title>Gerardo Nardelli | Software Engineer</title>
     <style type="text/css">body{margin:0;padding:0;font-family:Roboto,"Helvetica Neue","Calibri Light",sans-serif;}</style>
+    <style type="text/css"><%=    require('../src/index.js').default.css   %></style>
   </head>
   <body>
-    <div id="root">Loading...</div>
+    <div id="root"><%=
+      require('../src/index.js').default.html
+      %></div>
     <script>
       if ('serviceWorker' in navigator) {
         navigator.serviceWorker.register('service-worker.js').catch(function(ex) {

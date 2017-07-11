@@ -1,8 +1,6 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOMServer from 'react-dom/server'
 import App from './App';
+import { renderStatic } from 'glamor/server';
 
-ReactDOM.render(
-  <App />,
-  document.getElementById('root')
-);
+export default renderStatic(() =>  ReactDOMServer.renderToStaticMarkup(<App />));
