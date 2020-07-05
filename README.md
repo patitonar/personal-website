@@ -1,5 +1,5 @@
 # personal-website
-Source code of my personal website https://gnardelli.com/
+Source code of my personal website
 
 ## Stack
 * [React](https://facebook.github.io/react/)
